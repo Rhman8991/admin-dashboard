@@ -13,8 +13,50 @@
 }
 
 .header {
+    padding: 1rem;
     grid-area: header;
+    display: grid;
+    grid-template: 
+    "searchbar notification" 1fr
+    "profil-info buttons" 1fr / 2fr 1fr;
     background-color: cadetblue;
+}
+
+.searchbar {
+    grid-area: searchbar;
+}
+
+.profile-notification {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.profile-info {
+    grid-area: profil-info;
+    display: grid;
+    grid-template: 
+    "profile-img greeting" 1fr
+    "profile-img username" 1fr / 1fr 2fr;
+}
+
+.profile-img {
+    grid-area: profile-img;
+}
+
+.greeting {
+    grid-area: greeting;
+}
+
+.username {
+    grid-area: username;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-content: center;
 }
 
 .sidebar {
