@@ -83,6 +83,23 @@
 }
 
 .main-content {
+    padding: 1.5rem 1rem;
     grid-area: main-content;
+    display: grid;
+    grid-template: 
+    "projects announcements" 1fr
+    "projects trending" 1fr / 2fr 1fr;
     background-color: darkslateblue;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
