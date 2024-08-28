@@ -121,6 +121,17 @@
 
 .announcements {
     grid-area: announcements;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1rem;
+}
+
+.announcement-content-container {
+    padding: 1rem;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1rem;
+    background-color: wheat;
 }
 
 .trending {
