@@ -94,6 +94,29 @@
 
 .projects {
     grid-area: projects;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    row-gap: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    display: grid;
+    background-color: white;
+}
+
+.card-icon-container {
+    place-self: center end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 .announcements {
