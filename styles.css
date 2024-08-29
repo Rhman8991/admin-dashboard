@@ -19,7 +19,7 @@
     grid-template: 
     "searchbar notification" 1fr
     "profil-info buttons" 1fr / 2fr 1fr;
-    background-color: cadetblue;
+    background-color: #ffffff;
 }
 
 .searchbar {
@@ -65,7 +65,8 @@
     display: grid;
     grid-auto-rows: max-content;
     gap: 1.5rem;
-    background-color: cornflowerblue;
+    background-color: #1992d4;
+    color: #ffffff;
 }
 
 .logo,
@@ -82,6 +83,12 @@
     margin-top: 1rem;
 }
 
+.nav li a,
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .main-content {
     padding: 1.5rem 1rem;
     grid-area: main-content;
@@ -89,7 +96,7 @@
     grid-template: 
     "projects announcements" 1fr
     "projects trending" 1fr / 2fr 1fr;
-    background-color: darkslateblue;
+    background-color: #e2e8f0;
 }
 
 .projects {
@@ -131,7 +138,7 @@
     display: grid;
     grid-auto-rows: max-content;
     gap: 1rem;
-    background-color: wheat;
+    background-color: #ffffff;
 }
 
 .trending {
@@ -146,7 +153,7 @@
     display: grid;
     grid-auto-rows: max-content;
     gap: 1rem;
-    background-color: wheat;
+    background-color: #ffffff;
 }
 
 .trending-content {
