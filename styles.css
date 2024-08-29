@@ -26,10 +26,24 @@
     grid-area: searchbar;
 }
 
+.searchbar svg {
+    width: 2rem;
+}
+
 .profile-notification {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+}
+
+.profile-notification svg {
+    width: 16px;
+    height: 16px;
+}
+
+.profile-notification-img {
+    width: 16px;
+    border-radius: 50%;
 }
 
 .profile-info {
@@ -42,6 +56,9 @@
 
 .profile-img {
     grid-area: profile-img;
+    width: 3rem;
+    height: auto;
+    border-radius: 50%;
 }
 
 .greeting {
@@ -89,6 +106,18 @@
     color: #ffffff;
 }
 
+.sidebar .logo-svg {
+    width: 50px;
+    height: 50px;
+    fill: #ffffff;
+}
+
+.sidebar svg {
+    width: 16px;
+    height: 16px;
+    fill: #ffffff;
+}
+
 .main-content {
     padding: 1.5rem 1rem;
     grid-area: main-content;
@@ -117,6 +146,11 @@
     padding: 1rem;
     display: grid;
     background-color: white;
+}
+
+.card svg {
+    width: 1rem;
+    height: 1rem;
 }
 
 .card-icon-container {
@@ -173,4 +207,10 @@
 
 .trending-description {
     grid-area: description;
+}
+
+.trending-img {
+    width: 2rem;
+    border: 1px solid black;
+    border-radius: 50%;
 }
