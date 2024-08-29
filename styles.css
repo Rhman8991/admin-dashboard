@@ -91,13 +91,20 @@
 .menu li {
     display: grid;
     grid-template-columns: max-content max-content;
+    align-items: center;
     gap: 1rem;
+}
+
+h2.logo-text {
+    font-size: 2rem;
 }
 
 .nav li,
 .menu li {
     list-style: none;
     margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
 
 .nav li a,
@@ -107,14 +114,12 @@
 }
 
 .sidebar .logo-svg {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
     fill: #ffffff;
 }
 
 .sidebar svg {
-    width: 16px;
-    height: 16px;
+    width: 1.2rem;
     fill: #ffffff;
 }
 
