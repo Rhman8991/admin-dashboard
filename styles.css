@@ -165,6 +165,7 @@ h2.logo-text {
     grid-template: 
     "projects announcements" 1fr
     "projects trending" 1fr / 2fr 1fr;
+    gap: 1rem;
     background-color: #e2e8f0;
 }
 
