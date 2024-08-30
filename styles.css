@@ -162,9 +162,8 @@ h2.logo-text {
     padding: 1.5rem 1rem;
     grid-area: main-content;
     display: grid;
-    grid-template: 
-    "projects announcements" 1fr
-    "projects trending" 1fr / 2fr 1fr;
+    grid-template:
+    "projects articles" 1fr / 2fr 1fr;
     gap: 1rem;
     background-color: #e2e8f0;
 }
@@ -173,6 +172,12 @@ h2.logo-text {
     grid-area: projects;
     display: grid;
     grid-template-rows: max-content 1fr;
+    row-gap: 1rem;
+}
+
+.articles {
+    display: grid;
+    grid-auto-rows: max-content;
     row-gap: 1rem;
 }
 
@@ -202,7 +207,6 @@ h2.logo-text {
 }
 
 .announcements {
-    grid-area: announcements;
     display: grid;
     grid-auto-rows: max-content;
     gap: 1rem;
@@ -216,8 +220,7 @@ h2.logo-text {
     background-color: #ffffff;
 }
 
-.trending {
-    grid-area: trending;
+.trending {   
     display: grid;
     grid-template-rows: repeat(2, max-content);
     gap: 1rem;
