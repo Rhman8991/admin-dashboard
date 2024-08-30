@@ -162,8 +162,7 @@ h2.logo-text {
     padding: 1.5rem 1rem;
     grid-area: main-content;
     display: grid;
-    grid-template:
-    "projects articles" 1fr / 2fr 1fr;
+    grid-template: "projects articles" 1fr / 3fr 1fr;
     gap: 1rem;
     background-color: #e2e8f0;
 }
@@ -184,7 +183,7 @@ h2.logo-text {
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
+    grid-auto-rows: 175px;
     gap: 1rem;
 }
 
@@ -223,6 +222,10 @@ h2.logo-text {
     background-color: #ffffff;
 }
 
+.announcement-content p {
+    margin-bottom: 1rem;
+}
+
 .trending {   
     display: grid;
     grid-template-rows: repeat(2, max-content);
@@ -235,13 +238,16 @@ h2.logo-text {
     grid-auto-rows: max-content;
     gap: 1rem;
     background-color: #ffffff;
+    justify-content: center;
 }
 
 .trending-content {
     display: grid;
     grid-template: 
     "profile-img username" 1fr
-    "profile-img description" 1fr / 1fr 2fr;
+    "profile-img description" 1fr / max-content 1fr;
+    column-gap: 0.5rem;
+    align-items: center;
 }
 
 .trending-img {
@@ -262,9 +268,12 @@ h2.logo-text {
     border-radius: 50%;
 }
 
+.section-title {
+    font-size: 16px;
+}
+
 .card h4,
-.announcement-content h3,
-.trending-content h3 {
+.announcement-content h4 {
     font-size: 14px;
 }
 
@@ -273,3 +282,10 @@ h2.logo-text {
 .trending-content p {
     font-size: 12px;
 }
+
+.card,
+.announcement-content-container,
+.trending-content-container {
+    border-radius: 8px;
+}
+
