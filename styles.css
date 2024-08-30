@@ -77,16 +77,31 @@
 }
 
 .sidebar {
-    padding: 1.5rem;
+    padding: 12px;
     grid-area: sidebar;
     display: grid;
     grid-auto-rows: max-content;
-    gap: 1.5rem;
+    gap: 24px;
     background-color: #1992d4;
     color: #ffffff;
 }
 
-.logo,
+.logo {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 12px;
+    align-items: center;
+}
+
+h2.logo-text {
+    font-size: 24px;
+}
+
+.sidebar .logo-svg {
+    width: 32px;
+    fill: #ffffff;
+}
+
 .nav li,
 .menu li {
     display: grid;
@@ -95,15 +110,11 @@
     gap: 1rem;
 }
 
-h2.logo-text {
-    font-size: 2rem;
-}
-
 .nav li,
 .menu li {
     list-style: none;
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: 800;
 }
 
@@ -111,11 +122,6 @@ h2.logo-text {
 .menu li a {
     text-decoration: none;
     color: #ffffff;
-}
-
-.sidebar .logo-svg {
-    width: 3rem;
-    fill: #ffffff;
 }
 
 .sidebar svg {
