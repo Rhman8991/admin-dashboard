@@ -191,7 +191,10 @@ h2.logo-text {
 .card {
     padding: 1rem;
     display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    row-gap: 1rem;
     background-color: white;
+    border-left: 8px solid #f0b429;
 }
 
 .card svg {
